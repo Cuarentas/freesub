@@ -5,77 +5,75 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.19.32.166
-  port: 443
+  server: 162.159.38.127
+  port: 2052
   udp: true
   type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
-      Host: u.srilankangrill.online
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.19.32.166
+  server: 104.25.30.10
   port: 443
   udp: true
   type: vless
-  uuid: 44eae030-290b-4083-8102-6f8bab05701b
+  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
   tls: true
-  servername: cfvvv-ev1.pages.dev
+  servername: de14.69lover.my
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /fp=unsafe
+    path: /api/v2/6c316c769ad6853c/stream
     headers:
-      Host: cfvvv-ev1.pages.dev
+      Host: de14.69lover.my
 - name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 104.19.32.166
+  server: 104.25.30.10
   port: 443
   udp: true
   type: vless
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
   tls: true
-  servername: nb.lovecf.ggff.net
+  servername: de14.69lover.my
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: safari
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /api/v2/6c316c769ad6853c/stream
     headers:
-      Host: nb.lovecf.ggff.net
+      Host: de14.69lover.my
 - name: 🌐 其他地区 (Other) 04 - xiaohe
-  server: 104.19.32.166
+  server: 104.25.30.10
   port: 443
   udp: true
   type: vless
-  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
   tls: true
-  servername: nb.lovecf.ggff.net
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /proxyip=us.xiabibi.cf
-    headers:
-      Host: nb.lovecf.ggff.net
-- name: 🌐 其他地区 (Other) 05 - xiaohe
-  server: 172.67.153.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  tls: true
-  servername: ccs2g.pai50288.uk
+  servername: de14.69lover.my
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /pai50288
+    path: /api/v2/6c316c769ad6853c/stream
     headers:
-      Host: ccs2g.pai50288.uk
+      Host: de14.69lover.my
+- name: 🌐 其他地区 (Other) 05 - xiaohe
+  server: 104.25.30.10
+  port: 443
+  udp: true
+  type: vless
+  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
+  tls: true
+  servername: de14.69lover.my
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /api/v2/6c316c769ad6853c/stream
+    headers:
+      Host: de14.69lover.my
 proxy-groups:
 - name: PROXIES
   type: select

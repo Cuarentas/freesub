@@ -6,93 +6,79 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.19.32.166",
-      "server_port": 443,
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
-      "tls": {
-        "enabled": true,
-        "server_name": "u.srilankangrill.online",
-        "insecure": false
-      },
+      "server": "162.159.38.127",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/?ed=2560security=tls",
         "headers": {
-          "Host": "u.srilankangrill.online"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - xiaohe",
-      "server": "104.19.32.166",
+      "server": "104.25.30.10",
       "server_port": 443,
-      "uuid": "44eae030-290b-4083-8102-6f8bab05701b",
+      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
       "tls": {
         "enabled": true,
-        "server_name": "cfvvv-ev1.pages.dev",
-        "insecure": false
+        "server_name": "de14.69lover.my",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/fp=unsafe",
+        "path": "/api/v2/6c316c769ad6853c/stream",
         "headers": {
-          "Host": "cfvvv-ev1.pages.dev"
+          "Host": "de14.69lover.my"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 03 - xiaohe",
-      "server": "104.19.32.166",
+      "server": "104.25.30.10",
       "server_port": 443,
-      "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79",
+      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
       "tls": {
         "enabled": true,
-        "server_name": "nb.lovecf.ggff.net",
+        "server_name": "de14.69lover.my",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/proxyip=us.xiabibi.cf",
+        "path": "/api/v2/6c316c769ad6853c/stream",
         "headers": {
-          "Host": "nb.lovecf.ggff.net"
+          "Host": "de14.69lover.my"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 04 - xiaohe",
-      "server": "104.19.32.166",
+      "server": "104.25.30.10",
       "server_port": 443,
-      "uuid": "b09dfed1-90fa-4353-8bdf-de1edb2e2d79",
+      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
       "tls": {
         "enabled": true,
-        "server_name": "nb.lovecf.ggff.net",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=us.xiabibi.cf",
-        "headers": {
-          "Host": "nb.lovecf.ggff.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 05 - xiaohe",
-      "server": "172.67.153.156",
-      "server_port": 443,
-      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
-      "tls": {
-        "enabled": true,
-        "server_name": "ccs2g.pai50288.uk",
+        "server_name": "de14.69lover.my",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -100,9 +86,28 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/pai50288",
+        "path": "/api/v2/6c316c769ad6853c/stream",
         "headers": {
-          "Host": "ccs2g.pai50288.uk"
+          "Host": "de14.69lover.my"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 05 - xiaohe",
+      "server": "104.25.30.10",
+      "server_port": 443,
+      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
+      "tls": {
+        "enabled": true,
+        "server_name": "de14.69lover.my",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/v2/6c316c769ad6853c/stream",
+        "headers": {
+          "Host": "de14.69lover.my"
         }
       }
     },
