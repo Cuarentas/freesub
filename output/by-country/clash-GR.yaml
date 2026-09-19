@@ -5,28 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇷 希腊 (Greece) 01 - xiaohe
-  server: 185.126.238.87
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 7668f678-faee-40cc-9b56-9c39dc773388
-  network: grpc
-  grpc-opts:
-    grpc-service-name: security.debian.org
-- name: 🇬🇷 希腊 (Greece) 02 - xiaohe
-  server: 85.90.197.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
-    short-id: 94acb54627612d43
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇬🇷 希腊 (Greece) 03 - xiaohe
   server: 94.241.174.157
   port: 40443
   udp: true
@@ -39,50 +17,28 @@ proxies:
     short-id: beb4
   servername: deepl.com
   client-fingerprint: qq
-- name: 🇬🇷 希腊 (Greece) 04 - xiaohe
-  server: 91.186.218.227
-  port: 4443
+- name: 🇬🇷 希腊 (Greece) 02 - xiaohe
+  server: 185.126.238.87
+  port: 2083
   udp: true
   type: vless
-  uuid: c4aba2a4-ce37-4133-a3bb-7fe23a21ea95
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇬🇷 希腊 (Greece) 05 - xiaohe
-  server: 91.186.218.227
-  port: 4443
+  uuid: 7668f678-faee-40cc-9b56-9c39dc773388
+  network: grpc
+  grpc-opts:
+    grpc-service-name: security.debian.org
+- name: 🇬🇷 希腊 (Greece) 03 - xiaohe
+  server: 85.90.197.220
+  port: 443
   udp: true
   type: vless
-  uuid: deb1ae4f-a6b3-4ba3-8fb7-b18a05252928
+  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
+  flow: xtls-rprx-vision
   tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇬🇷 希腊 (Greece) 06 - xiaohe
-  server: 91.186.218.227
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 60dca33b-7804-41da-b158-ecf71d95ff85
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  reality-opts:
+    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
+    short-id: 94acb54627612d43
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -91,9 +47,6 @@ proxy-groups:
   - 🇬🇷 希腊 (Greece) 01 - xiaohe
   - 🇬🇷 希腊 (Greece) 02 - xiaohe
   - 🇬🇷 希腊 (Greece) 03 - xiaohe
-  - 🇬🇷 希腊 (Greece) 04 - xiaohe
-  - 🇬🇷 希腊 (Greece) 05 - xiaohe
-  - 🇬🇷 希腊 (Greece) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -102,8 +55,5 @@ proxy-groups:
   - 🇬🇷 希腊 (Greece) 01 - xiaohe
   - 🇬🇷 希腊 (Greece) 02 - xiaohe
   - 🇬🇷 希腊 (Greece) 03 - xiaohe
-  - 🇬🇷 希腊 (Greece) 04 - xiaohe
-  - 🇬🇷 希腊 (Greece) 05 - xiaohe
-  - 🇬🇷 希腊 (Greece) 06 - xiaohe
 rules:
 - MATCH,PROXIES
