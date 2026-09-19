@@ -4,25 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-      "server": "172.67.67.178",
-      "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "server": "178.18.147.66",
+      "server_port": 29900,
+      "password": "github.com/Alvin9999-newpac/fanqiang",
       "tls": {
         "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "rAyAn-007.nAsTaRaN.DpDnS.OrG"
-        }
+        "server_name": "www.microsoft.com",
+        "insecure": true
       }
     },
     {
@@ -36,7 +26,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -52,45 +42,43 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
-      "server": "95.85.224.17",
-      "server_port": 443,
-      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "est1313.ggisopi.su",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
       "server": "94.183.170.135",
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/",
+        "headers": {
+          "Host": "estproxy4.lockdwn.com"
+        }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
-      "server": "217.60.182.79",
-      "server_port": 443,
-      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "type": "trojan",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": false
+        "server_name": "russiapower.accesscam.org",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -112,13 +100,43 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "server": "estomin1.vodniki.monster",
+      "server_port": 443,
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false
+        "server_name": "estomin1.vodniki.monster",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk",
+          "short_id": "d98e7afec9c0c359"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe",
+      "server": "95.85.224.17",
+      "server_port": 443,
+      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "est1313.ggisopi.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
+        }
       }
     },
     {
@@ -132,7 +150,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe"
       ]
     },
     {
@@ -145,7 +164,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe",
         "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -14,23 +14,28 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
-      "server": "213.183.63.60",
-      "server_port": 9085,
-      "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "server": "192.145.31.5",
+      "server_port": 8443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "neth9.lunariai.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - xiaohe",
-      "server": "131.123.39.29",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
+      "server": "213.183.63.60",
+      "server_port": 9064,
+      "method": "aes-256-cfb",
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "vless",
@@ -44,7 +49,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -54,28 +59,27 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe",
-      "server": "192.145.31.5",
-      "server_port": 8443,
-      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
-      "tls": {
-        "enabled": true,
-        "server_name": "neth9.lunariai.ru",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "server": "213.183.63.60",
+      "server_port": 9049,
+      "method": "aes-256-cfb",
+      "password": "PRBf4BS2HvJqtWxY"
     },
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe",
+      "server": "131.123.39.29",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe",
       "server": "87.120.196.212",
       "server_port": 443,
       "uuid": "5561acfb-0adc-4c76-bfbf-767a76c7cbf0",
@@ -92,7 +96,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe",
       "server": "144.31.50.236",
       "server_port": 443,
       "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
@@ -102,7 +106,7 @@
         "server_name": "yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -122,7 +126,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe",
         "🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe",
         "🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe",
+        "🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe"
       ]
     },
     {
@@ -135,7 +140,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 04 - xiaohe",
         "🇧🇬 保加利亚 (Bulgaria) 05 - xiaohe",
         "🇧🇬 保加利亚 (Bulgaria) 06 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 07 - xiaohe",
+        "🇧🇬 保加利亚 (Bulgaria) 08 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
