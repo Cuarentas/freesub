@@ -1,0 +1,61 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  server: 172.67.155.136
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 73796e63-0000-4000-8000-000000000007
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 比利时 (Belgium) 02 - xiaohe
+  server: 172.67.155.136
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 73796e63-0000-4000-8000-000000000008
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+- name: 🇧🇪 比利时 (Belgium) 03 - xiaohe
+  server: 141.227.137.177
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  tls: true
+  servername: kkkk-xcd.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: kkkk-xcd.pages.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 02 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 03 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 02 - xiaohe
+  - 🇧🇪 比利时 (Belgium) 03 - xiaohe
+rules:
+- MATCH,PROXIES

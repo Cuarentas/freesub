@@ -4,52 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "82.198.246.250",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
+      "server": "195.85.59.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime58.workers.dev"
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-      "server": "34.87.229.148",
-      "server_port": 443,
-      "uuid": "4f865f35-cf47-4e7f-a7e6-8882511a1b36",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4",
-          "short_id": "8a7d5e0248cdb1b1"
+      "server": "188.114.97.6",
+      "server_port": 80,
+      "uuid": "e51453d3-7972-44d7-a657-ed89520f48b6",
+      "transport": {
+        "type": "ws",
+        "path": "/au-do",
+        "headers": {
+          "Host": "web.whatsapp.com.r3xxe.eu.cc"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "34.87.244.111",
-      "server_port": 443,
-      "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E",
-          "short_id": "d725f0dd8cce210f"
-        }
-      }
+      "server": "82.198.246.233",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
     },
     {
       "type": "vless",
@@ -84,6 +72,46 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
+      "server": "34.87.244.111",
+      "server_port": 443,
+      "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E",
+          "short_id": "d725f0dd8cce210f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 07 - xiaohe",
+      "server": "34.87.229.148",
+      "server_port": 443,
+      "uuid": "4f865f35-cf47-4e7f-a7e6-8882511a1b36",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4",
+          "short_id": "8a7d5e0248cdb1b1"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -92,7 +120,9 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 07 - xiaohe"
       ]
     },
     {
@@ -103,7 +133,9 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
+        "🇦🇺 澳大利亚 (Australia) 07 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

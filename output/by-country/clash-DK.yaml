@@ -5,12 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇰 丹麦 (Denmark) 01 - xiaohe
-  server: 38.180.214.110
-  port: 5600
+  server: 45.148.30.11
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /season/classify?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
