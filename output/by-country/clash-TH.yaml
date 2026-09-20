@@ -15,23 +15,20 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: 8.222.70.238
-  port: 443
+  server: 118.193.57.167
+  port: 49667
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
+  type: vmess
+  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
+    path: /d46bf492
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 104.16.10.185
+  server: 104.21.34.106
   port: 443
   udp: true
   type: vless

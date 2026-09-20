@@ -15,7 +15,7 @@
         "server_name": "alda1.thewalkingded.life",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,

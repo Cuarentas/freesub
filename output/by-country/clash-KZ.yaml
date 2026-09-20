@@ -5,42 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 172.64.158.146
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
-  server: 104.18.47.113
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
-  server: 45.131.71.183
+  server: 89.106.88.6
   port: 8443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /player?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  reality-opts:
+    public-key: -AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4
+    short-id: 08
+  servername: dest1.cdn-update.rutube.info
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
+  server: 109.248.170.119
+  port: 13447
+  udp: true
+  type: vless
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  tls: true
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
+  servername: yahoo.com
+  client-fingerprint: qq
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   server: 77.73.232.61
   port: 19747
   udp: true
@@ -52,41 +43,18 @@ proxies:
     short-id: '2001'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
-  server: 109.248.170.119
-  port: 13447
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  server: 178.236.16.98
+  port: 35728
   udp: true
   type: vless
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
   tls: true
   reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
-  server: 83.222.23.81
-  port: 38065
-  udp: true
-  type: vless
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
-  tls: true
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe
-  server: 151.101.1.194
-  port: 80
-  udp: true
-  type: vless
-  uuid: 6795c884-7f09-4777-b779-76d0d6d6c0a1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: simorghfr.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,9 +64,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,8 +73,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -6,53 +6,50 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
-      "server": "172.64.158.146",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tlssecurity=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+      "server": "89.106.88.6",
+      "server_port": 8443,
+      "uuid": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
+      "tls": {
+        "enabled": true,
+        "server_name": "dest1.cdn-update.rutube.info",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-AdhgMZeNHR2zAmGWa5peg7Ni0-e4IVMoSzydC9n7C4",
+          "short_id": "08"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
-      "server": "104.18.47.113",
-      "server_port": 2086,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+      "server": "109.248.170.119",
+      "server_port": 13447,
+      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
+          "short_id": "83"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe",
-      "server": "45.131.71.183",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/player?ed=2560fp=chrome",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe",
       "server": "77.73.232.61",
       "server_port": 19747,
       "uuid": "2a9ed01e-5455-44b4-a66a-76ee8165f0ac",
@@ -72,10 +69,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe",
-      "server": "109.248.170.119",
-      "server_port": 13447,
-      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe",
+      "server": "178.236.16.98",
+      "server_port": 35728,
+      "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
       "tls": {
         "enabled": true,
         "server_name": "yahoo.com",
@@ -85,42 +82,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
-          "short_id": "83"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe",
-      "server": "83.222.23.81",
-      "server_port": 38065,
-      "uuid": "4b9063e0-3288-44e9-9aac-80fbfce323a0",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo",
-          "short_id": "fa"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe",
-      "server": "151.101.1.194",
-      "server_port": 80,
-      "uuid": "6795c884-7f09-4777-b779-76d0d6d6c0a1",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "simorghfr.global.ssl.fastly.net"
+          "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
+          "short_id": "69a2"
         }
       }
     },
@@ -132,10 +95,7 @@
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe"
       ]
     },
     {
@@ -145,10 +105,7 @@
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaohe",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaohe"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
