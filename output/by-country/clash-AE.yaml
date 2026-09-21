@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: b375bdc2-5a7d-4074-898e-030ad75e3503
+  uuid: 8e7df32a-fd3e-457c-950e-e131699bcf70
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -38,9 +38,9 @@ proxies:
     public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
-  client-fingerprint: qq
+  client-fingerprint: edge
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 85.204.107.171
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2
