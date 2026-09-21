@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - xiaohe
+  server: 204.216.216.23
+  port: 10086
+  udp: true
+  type: vless
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+- name: 🇮🇹 意大利 (Italy) 02 - xiaohe
   server: 185.164.175.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 02 - xiaohe
-  server: 204.216.216.23
-  port: 10086
-  udp: true
-  type: vless
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
 - name: 🇮🇹 意大利 (Italy) 03 - xiaohe
   server: 57.131.48.45
   port: 8388
@@ -25,20 +25,21 @@ proxies:
   cipher: aes-256-gcm
   password: itzvpn@321
 - name: 🇮🇹 意大利 (Italy) 04 - xiaohe
-  server: 31.76.113.212
-  port: 443
+  server: 31.77.154.14
+  port: 8443
   udp: true
   type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  flow: xtls-rprx-vision
+  uuid: 75079a7f-75b5-418b-8a65-f7b2f438cd4a
   tls: true
   reality-opts:
-    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
-    short-id: 4fa44664f6a566d3
-  servername: italia.superbuba.top
+    public-key: 3O__mdy-whzI07V-QEyR6GQnag1FNwtHijDxt2_jkDQ
+  servername: swscan.apple.com
   client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
 - name: 🇮🇹 意大利 (Italy) 05 - xiaohe
-  server: 31.77.201.33
+  server: 31.76.113.231
   port: 443
   udp: true
   type: vless
@@ -51,6 +52,13 @@ proxies:
   servername: italia.superbuba.top
   client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 06 - xiaohe
+  server: 91.201.65.122
+  port: 9002
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
+- name: 🇮🇹 意大利 (Italy) 07 - xiaohe
   server: 57.131.38.163
   port: 2053
   udp: true
@@ -61,9 +69,9 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 07 - xiaohe
-  server: italia.superbuba.top
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
+  server: 31.77.201.33
   port: 443
   udp: true
   type: vless
@@ -75,14 +83,20 @@ proxies:
     short-id: 4fa44664f6a566d3
   servername: italia.superbuba.top
   client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 08 - xiaohe
-  server: 91.201.65.122
-  port: 9053
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: SBM7R883jBmnqe6C
 - name: 🇮🇹 意大利 (Italy) 09 - xiaohe
+  server: 31.76.113.212
+  port: 443
+  udp: true
+  type: vless
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
+    short-id: 4fa44664f6a566d3
+  servername: italia.superbuba.top
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 10 - xiaohe
   server: 82.118.16.189
   port: 443
   udp: true
@@ -94,8 +108,8 @@ proxies:
     public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
     short-id: 37fbf155c7a9f3ff
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇹 意大利 (Italy) 10 - xiaohe
+  client-fingerprint: safari
+- name: 🇮🇹 意大利 (Italy) 11 - xiaohe
   server: 82.118.16.187
   port: 443
   udp: true
@@ -107,8 +121,15 @@ proxies:
     public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇮🇹 意大利 (Italy) 11 - xiaohe
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 12 - xiaohe
+  server: 91.201.65.122
+  port: 9053
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: SBM7R883jBmnqe6C
+- name: 🇮🇹 意大利 (Italy) 13 - xiaohe
   server: 204.216.216.23
   port: 1114
   udp: true
@@ -120,7 +141,7 @@ proxies:
     public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
     short-id: 79a1e14b
   servername: yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,6 +158,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 09 - xiaohe
   - 🇮🇹 意大利 (Italy) 10 - xiaohe
   - 🇮🇹 意大利 (Italy) 11 - xiaohe
+  - 🇮🇹 意大利 (Italy) 12 - xiaohe
+  - 🇮🇹 意大利 (Italy) 13 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -153,5 +176,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 09 - xiaohe
   - 🇮🇹 意大利 (Italy) 10 - xiaohe
   - 🇮🇹 意大利 (Italy) 11 - xiaohe
+  - 🇮🇹 意大利 (Italy) 12 - xiaohe
+  - 🇮🇹 意大利 (Italy) 13 - xiaohe
 rules:
 - MATCH,PROXIES
