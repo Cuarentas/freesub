@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: netlivpn4024.bgfjhd.workers.dev
 - name: 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
-  server: 104.21.117.9
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
