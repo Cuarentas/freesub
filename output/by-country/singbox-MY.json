@@ -20,49 +20,7 @@
       "tag": "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
       "server": "jpzzqqnzdbgwhbhzsrgh.cfooov.xyz",
       "server_port": 16967,
-      "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zCNI8OUsvp6NKt52Z_93OoqegAjbVjzP2tHGXd3cQjM",
-          "short_id": "0888830f7006f1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
-      "server": "clhkzzzdbgwxxndnlm.cfooov.xyz",
-      "server_port": 60507,
-      "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zCNI8OUsvp6NKt52Z_93OoqegAjbVjzP2tHGXd3cQjM",
-          "short_id": "0888830f7006f1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe",
-      "server": "sczznmbbbzgwlwzdhsql.jiedddym.com",
-      "server_port": 31378,
-      "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
+      "uuid": "55848813-689e-4a39-82cf-00748cbc7289",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -84,9 +42,7 @@
       "outbounds": [
         "auto",
         "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe"
       ]
     },
     {
@@ -94,9 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

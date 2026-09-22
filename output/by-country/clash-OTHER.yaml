@@ -5,21 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.17.218.144
-  port: 443
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🌐 其他地区 (Other) 02 - xiaohe
-  server: 104.16.72.2
+  server: 104.19.229.21
   port: 443
   udp: true
   type: trojan
@@ -28,9 +14,20 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
+    path: //assignment
+- name: 🌐 其他地区 (Other) 02 - xiaohe
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 - name: 🌐 其他地区 (Other) 03 - xiaohe
-  server: 104.16.72.2
+  server: 104.19.229.21
   port: 443
   udp: true
   type: trojan
@@ -41,7 +38,7 @@ proxies:
   ws-opts:
     path: /
 - name: 🌐 其他地区 (Other) 04 - xiaohe
-  server: 104.16.72.2
+  server: 104.19.229.21
   port: 443
   udp: true
   type: trojan
@@ -50,7 +47,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
+    path: //assignment
 proxy-groups:
 - name: PROXIES
   type: select
