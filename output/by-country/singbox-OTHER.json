@@ -6,26 +6,19 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.18.32.47",
+      "server": "us7-2.998998.best",
       "server_port": 443,
-      "uuid": "1f87cbe7-316b-49ba-a416-d3c2af72ed50",
+      "uuid": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
       "tls": {
         "enabled": true,
-        "server_name": "spidertest.vibenest.net",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "server9.9966338.xyz",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/1f87cbe7-316b-49ba-a416-d3c2af72ed50",
+        "path": "/imnotarealherox",
         "headers": {
-          "Host": "spidertest.vibenest.net"
+          "Host": "server9.9966338.xyz"
         }
       }
     },

@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.18.32.47
+  server: us7-2.998998.best
   port: 443
   udp: true
   type: vless
-  uuid: 1f87cbe7-316b-49ba-a416-d3c2af72ed50
+  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
   tls: true
-  servername: spidertest.vibenest.net
+  servername: server9.9966338.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws/1f87cbe7-316b-49ba-a416-d3c2af72ed50
+    path: /imnotarealherox
     headers:
-      Host: spidertest.vibenest.net
+      Host: server9.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
