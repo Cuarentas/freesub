@@ -4,15 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe",
-      "server": "103.97.91.17",
-      "server_port": 443,
-      "password": "600421cf-11d7-429f-a65b-c30397f1bc03",
+      "type": "vless",
+      "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaohe",
+      "server": "45.134.9.133",
+      "server_port": 8443,
+      "uuid": "a6d20e79-d326-42c1-bc20-f4cecc6dc42d",
       "tls": {
         "enabled": true,
-        "server_name": "la.freeguard.org",
-        "insecure": false
+        "server_name": "ul-mexico1.09vpn.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
       }
     },
     {
@@ -20,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaohe"
+        "🇲🇽 墨西哥 (Mexico) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

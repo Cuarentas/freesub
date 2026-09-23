@@ -5,28 +5,75 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  server: 104.20.6.153
+  port: 8880
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: 154.197.75.40
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime37.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  tls: true
+  servername: novantunnel.tech
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: db381c11-9dc4-4689-b654-a8159598e16d
+  uuid: ceaf462e-a9fa-4c4b-94be-f192570465a7
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+  server: 45.130.125.201
+  port: 80
+  udp: true
+  type: vless
+  uuid: dc8a9493-c54a-459e-d060-81a700000001
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: nahan-core.netizo09.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   server: 94.183.224.45
   port: 443
   udp: true
@@ -38,16 +85,16 @@ proxies:
     public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 85.204.107.181
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 09 - xiaohe
   server: 139.185.44.42
   port: 8443
   udp: true
@@ -60,7 +107,7 @@ proxies:
     short-id: 855834d3b002ad21
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 10 - xiaohe
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -69,21 +116,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
-  server: 31.58.181.88
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c4783cc5-aeec-4473-855b-1c98965949dd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 11 - xiaohe
   server: 146.70.102.82
   port: 443
   udp: true
@@ -109,6 +142,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,5 +158,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 06 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 07 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 08 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 09 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 10 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 11 - xiaohe
 rules:
 - MATCH,PROXIES
