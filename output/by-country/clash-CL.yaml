@@ -24,8 +24,6 @@ proxies:
   network: ws
   ws-opts:
     path: /platform108
-    headers:
-      Host: platform108.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 03 - xiaohe
   server: 64.176.2.21
   port: 8388
