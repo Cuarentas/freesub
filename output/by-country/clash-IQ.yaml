@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 188.114.98.134
-  port: 443
-  udp: true
-  type: vless
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
-  tls: true
-  servername: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /yraL4HRbwB8cMc0F?ed=2560
-    headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
-- name: 🇮🇶 IQ 02 - xiaohe
   server: 193.56.135.137
   port: 9543
   udp: true
@@ -30,9 +16,9 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcde
   servername: storage.yandexcloud.net
-  client-fingerprint: random
-- name: 🇮🇶 IQ 03 - xiaohe
-  server: 193.56.135.233
+  client-fingerprint: chrome
+- name: 🇮🇶 IQ 02 - xiaohe
+  server: 193.56.135.212
   port: 9543
   udp: true
   type: vless
@@ -43,7 +29,7 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcde
   servername: storage.yandexcloud.net
-  client-fingerprint: chrome
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇮🇶 IQ 01 - xiaohe
   - 🇮🇶 IQ 02 - xiaohe
-  - 🇮🇶 IQ 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇮🇶 IQ 01 - xiaohe
   - 🇮🇶 IQ 02 - xiaohe
-  - 🇮🇶 IQ 03 - xiaohe
 rules:
 - MATCH,PROXIES
