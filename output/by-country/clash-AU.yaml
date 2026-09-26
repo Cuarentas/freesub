@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   udp: true
   type: vmess
@@ -26,12 +26,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  server: vpn-au-002.fastervpn.world
+  server: 172.105.169.70
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  type: vless
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 172.105.169.70
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
