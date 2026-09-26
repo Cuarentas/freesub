@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇹 GT 01 - xiaohe
+- name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
   server: 185.47.254.251
   port: 443
   udp: true
@@ -17,17 +17,25 @@ proxies:
     short-id: 6c059ecfddf9b179
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
+  server: 45.164.20.114
+  port: 10226
+  udp: true
+  type: vless
+  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇹 GT 01 - xiaohe
+  - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
+  - 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇹 GT 01 - xiaohe
+  - 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
+  - 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
 rules:
 - MATCH,PROXIES
