@@ -5,42 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+  server: 172.66.47.45
   port: 443
   udp: true
   type: vless
-  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
+  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
   tls: true
-  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+  servername: ezaccess-project-f62c30.pages.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/vgdVPmQSz4OFdmaGVpcyfevXt20z?ed=2560
+    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 153.76.185.151
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 51c8ed23-7ca5-43f1-b0a8-0a37a7a16647
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+      Host: ezaccess-project-f62c30.pages.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaohe
-  - 🇨🇿 捷克 (Czech) 02 - xiaohe
 rules:
 - MATCH,PROXIES
