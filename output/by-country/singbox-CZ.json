@@ -6,21 +6,24 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "153.76.185.147",
+      "server": "153.76.185.102",
       "server_port": 3090,
-      "uuid": "dca830a2-3c69-4e1b-bc0b-a2ea22af53ba",
+      "uuid": "cbbc93ef-6d35-463a-a856-64265c42e66d",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16280,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "server": "194.87.59.26",
+      "server_port": 2085,
+      "uuid": "cbbc93ef-6d35-463a-a856-64265c42e66d",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
     },
     {
       "type": "selector",
