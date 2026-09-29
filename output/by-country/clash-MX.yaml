@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
+  server: 34.51.29.171
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
+  tls: true
+  reality-opts:
+    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
+    short-id: dcabbf24adf88abc
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
   server: 45.134.9.133
   port: 8443
   udp: true
@@ -16,18 +28,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless/
-- name: 🇲🇽 墨西哥 (Mexico) 02 - xiaohe
-  server: 34.51.29.171
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
-  tls: true
-  reality-opts:
-    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
-    short-id: dcabbf24adf88abc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
