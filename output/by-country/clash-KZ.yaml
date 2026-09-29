@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaohe
-  server: 89.218.15.90
-  port: 10002
-  udp: true
-  type: vless
-  uuid: 392fcc7e-b995-11f1-a6b7-1b2272a86bd5
-  tls: true
-  servername: kz1.vpnjantit.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vpnjantit
-    headers:
-      Host: kz1.vpnjantit.com
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   server: 38.107.234.57
   port: 80
   udp: true
@@ -32,7 +17,7 @@ proxies:
     path: /vmess/
     headers:
       Host: 38.107.234.57
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -43,8 +28,8 @@ proxies:
     public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
     short-id: '83'
   servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
+  client-fingerprint: edge
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   server: 178.236.16.98
   port: 35728
   udp: true
@@ -56,7 +41,7 @@ proxies:
     short-id: 69a2
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
   server: 176.109.104.195
   port: 9882
   udp: true
@@ -65,7 +50,7 @@ proxies:
   tls: true
   reality-opts:
     public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
+    short-id: aabbccdd
   servername: dl.google.com
   client-fingerprint: qq
   network: grpc
@@ -80,7 +65,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,6 +74,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaohe
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaohe
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaohe
 rules:
 - MATCH,PROXIES
