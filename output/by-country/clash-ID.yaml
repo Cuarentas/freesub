@@ -5,16 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
-  server: 114.129.43.30
-  port: 8880
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16298
   udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime04.workers.dev
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 - name: 🇮🇩 印尼 (Indonesia) 02 - xiaohe
   server: 103.172.197.2
   port: 29172
@@ -28,6 +25,19 @@ proxies:
   servername: aws.amazon.com
   client-fingerprint: ios
 - name: 🇮🇩 印尼 (Indonesia) 03 - xiaohe
+  server: az-1.linkaa.xyz
+  port: 55386
+  udp: true
+  type: vmess
+  uuid: 6E571484-4166-4699-8F58-B34A1823691F
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /game/resources
+    headers:
+      Host: az-1.linkaa.xyz
+- name: 🇮🇩 印尼 (Indonesia) 04 - xiaohe
   server: 103.172.197.3
   port: 16006
   udp: true
@@ -38,9 +48,9 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇩 印尼 (Indonesia) 04 - xiaohe
-  server: 188.114.97.6
+  client-fingerprint: random
+- name: 🇮🇩 印尼 (Indonesia) 05 - xiaohe
+  server: 104.18.32.87
   port: 443
   udp: true
   type: trojan
@@ -59,6 +69,7 @@ proxy-groups:
   - 🇮🇩 印尼 (Indonesia) 02 - xiaohe
   - 🇮🇩 印尼 (Indonesia) 03 - xiaohe
   - 🇮🇩 印尼 (Indonesia) 04 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +79,6 @@ proxy-groups:
   - 🇮🇩 印尼 (Indonesia) 02 - xiaohe
   - 🇮🇩 印尼 (Indonesia) 03 - xiaohe
   - 🇮🇩 印尼 (Indonesia) 04 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 05 - xiaohe
 rules:
 - MATCH,PROXIES
