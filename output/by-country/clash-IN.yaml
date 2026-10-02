@@ -5,22 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: tttyder.wsone.icu
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: tttyder.wsone.icu
-  skip-cert-verify: false
-- name: 🇮🇳 印度 (India) 02 - xiaohe
-  server: hyfuuf6.wsone.icu
-  port: 443
-  udp: true
-  type: trojan
-  password: M7v%w11Se*
-  sni: hyfuuf6.wsone.icu
-  skip-cert-verify: false
-- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -32,14 +16,15 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 172.105.39.124
-  port: 7002
+- name: 🇮🇳 印度 (India) 02 - xiaohe
+  server: 35.244.28.130
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇮🇳 印度 (India) 05 - xiaohe
+  type: trojan
+  password: M7v%w11Se*
+  sni: tttyder.wsone.icu
+  skip-cert-verify: false
+- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: 152.67.8.205
   port: 80
   udp: true
@@ -58,8 +43,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
-  - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,7 +51,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
-  - 🇮🇳 印度 (India) 04 - xiaohe
-  - 🇮🇳 印度 (India) 05 - xiaohe
 rules:
 - MATCH,PROXIES

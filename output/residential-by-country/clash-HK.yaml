@@ -5,15 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: aac08668-tmm5c0-tw661e-1isea.hk3.hyhuawei.com
+  server: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: d6abdbda-fe9d-11ec-bb74-f23c9164ca5d
-  sni: aac08668-tmm5c0-tw661e-1isea.hk3.hyhuawei.com
+  password: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  sni: 3de2432e-tmm5c0-tonrqx-1khwf.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
-  server: 218.250.216.236
+  server: 8175bce5-tmm5c0-tzzpok-1sllg.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d6e1207c-f41a-11ef-9495-f23c91cfbbc9
+  sni: 8175bce5-tmm5c0-tzzpok-1sllg.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  server: a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com
   port: 443
   udp: true
   type: vless
@@ -22,7 +30,7 @@ proxies:
   reality-opts:
     public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
   servername: download.windowsupdate.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -30,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
