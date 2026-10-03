@@ -4,12 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "130.94.69.15",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
+      "server": "47.250.84.25",
+      "server_port": 443,
+      "password": "5931134d1cde66bf83a54acdfebe7ab2",
+      "tls": {
+        "enabled": true,
+        "server_name": "moltbot.doctoroyy.net",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
@@ -33,35 +37,36 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
-      "server": "47.250.84.25",
-      "server_port": 443,
-      "password": "5931134d1cde66bf83a54acdfebe7ab2",
-      "tls": {
-        "enabled": true,
-        "server_name": "47.250.84.25",
-        "insecure": true
-      }
+      "server": "47.250.135.244",
+      "server_port": 10000,
+      "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d",
+      "security": "auto"
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe",
-      "server": "175.29.23.179",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "ju88t.ce8d.q6g.hh.ov0.kdns.fr",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/glasspanel/guest000_0_5de14443985f/",
-        "headers": {
-          "Host": "ju88t.ce8d.q6g.hh.ov0.kdns.fr"
-        }
-      }
+      "server": "47.250.135.244",
+      "server_port": 10000,
+      "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 05 - xiaohe",
+      "server": "47.250.135.244",
+      "server_port": 10000,
+      "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 06 - xiaohe",
+      "server": "47.250.135.244",
+      "server_port": 10000,
+      "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -71,7 +76,9 @@
         "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
         "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
         "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 05 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 06 - xiaohe"
       ]
     },
     {
@@ -81,7 +88,9 @@
         "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
         "🇲🇾 马来西亚 (Malaysia) 02 - xiaohe",
         "🇲🇾 马来西亚 (Malaysia) 03 - xiaohe",
-        "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe"
+        "🇲🇾 马来西亚 (Malaysia) 04 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 05 - xiaohe",
+        "🇲🇾 马来西亚 (Malaysia) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

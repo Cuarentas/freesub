@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
-  server: 130.94.69.15
-  port: 7001
+  server: 47.250.84.25
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  type: trojan
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  sni: moltbot.doctoroyy.net
+  skip-cert-verify: true
 - name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
   server: 149.33.30.176
   port: 443
@@ -25,27 +26,37 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
-  server: 47.250.84.25
-  port: 443
+  server: 47.250.135.244
+  port: 10000
   udp: true
-  type: trojan
-  password: 5931134d1cde66bf83a54acdfebe7ab2
-  sni: 47.250.84.25
-  skip-cert-verify: true
+  type: vmess
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
 - name: 🇲🇾 马来西亚 (Malaysia) 04 - xiaohe
-  server: 175.29.23.179
-  port: 443
+  server: 47.250.135.244
+  port: 10000
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: ju88t.ce8d.q6g.hh.ov0.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: ju88t.ce8d.q6g.hh.ov0.kdns.fr
+  type: vmess
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+- name: 🇲🇾 马来西亚 (Malaysia) 05 - xiaohe
+  server: 47.250.135.244
+  port: 10000
+  udp: true
+  type: vmess
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+- name: 🇲🇾 马来西亚 (Malaysia) 06 - xiaohe
+  server: 47.250.135.244
+  port: 10000
+  udp: true
+  type: vmess
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +66,8 @@ proxy-groups:
   - 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 04 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 05 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +77,7 @@ proxy-groups:
   - 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 03 - xiaohe
   - 🇲🇾 马来西亚 (Malaysia) 04 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 05 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 06 - xiaohe
 rules:
 - MATCH,PROXIES

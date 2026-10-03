@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "ie.tronsg.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -48,7 +48,7 @@
         "server_name": "vk.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
