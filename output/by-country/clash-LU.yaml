@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
-  server: 176.108.242.55
-  port: 5002
-  udp: true
-  type: vless
-  uuid: 8e8ea5d2-6941-40fb-9efe-f9062b11b2b9
-  tls: true
-  servername: lm.centermass.net
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: media.playback.v1.SessionGateway
-- name: 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
   server: lbeiggdz.smart-cats.ru
   port: 443
   udp: true
@@ -38,13 +25,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
-  - 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
-  - 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
 rules:
 - MATCH,PROXIES
