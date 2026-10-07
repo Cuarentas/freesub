@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  server: 199.232.78.101
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@@MetiVIP/---@@MetiVIP---@MetiVIP
-- name: 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
   server: 83.147.18.75
   port: 443
   udp: true
@@ -28,29 +17,17 @@ proxies:
     short-id: 7f1e29593aa94ad1
   servername: www.bing.com
   client-fingerprint: qq
-- name: 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
-  server: 211.20.156.191
-  port: 28164
-  udp: true
-  type: trojan
-  password: i99Cef
-  sni: ctldl.windowsupdate.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 02 - xiaohe
-  - 🇺🇦 乌克兰 (Ukraine) 03 - xiaohe
 rules:
 - MATCH,PROXIES
