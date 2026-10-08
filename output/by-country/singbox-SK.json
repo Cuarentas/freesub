@@ -4,15 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe",
-      "server": "us3.xiaoliyu.cyou",
-      "server_port": 18333,
-      "password": "19f72087-4591-4d72-930b-2697078ec2be",
-      "tls": {
-        "enabled": true,
-        "server_name": "us3.xiaoliyu.cyou",
-        "insecure": true
+      "type": "vless",
+      "tag": "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe",
+      "server": "80.243.228.84",
+      "server_port": 2085,
+      "uuid": "84a7add6-dab3-4af4-900b-192e3e338875",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
@@ -20,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe"
+        "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe"
+        "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
